@@ -1,0 +1,302 @@
+
+@use "colors" as *;
+@use "typography" as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* frontpage */
+.frontpage {
+    background-color: white;
+    padding: 0 10%;
+ 
+    .top {
+        margin: 0;
+        height: 210px;
+        display: flex;
+        align-items: center;
+
+        .name {
+            margin: 0;  
+            display: flex;
+            column-gap: 20px;
+            align-items: center;
+            img {
+                height: 50px;
+                filter: drop-shadow(3px 3px 2px #2c2c2c70);
+            }
+        }
+
+    /* navigation */
+        .nav{
+            padding: 0;
+
+            .navbar {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                display: flex;
+                justify-content: flex-end;
+ 
+                ul {
+                    display: flex;
+                    background-color: $sixth-color;
+                    width: 100%;
+                    height: 55px;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: 20px;
+                    padding: 0;
+                    margin: 0;
+
+                    li {
+                        list-style-type: none;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin: 0;
+                        padding: 0;
+
+                        a {
+                            text-decoration: none;
+                            color: $primary-color;
+                            margin: 0;
+                            transition-duration: 0.2s;
+                            border-right: solid 1px $fifth-color;
+                            padding: 0 15px;
+                        }
+                    }
+
+                    li:hover {
+                        background-color: $eightth-color; 
+                        }
+
+                    li:active {
+                    background-color: $nineth-color; 
+                    }
+                }
+            }
+        }  
+    }
+
+    /* bottom on frontpage */
+    .bottom {
+        padding: 0;
+        justify-content: flex-end;
+        margin-top: 35vh;
+
+        .greybox {
+            display: flex;
+            flex-direction: column;
+            background-color: $sixth2-color;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 12px;
+        }
+        .space {
+            height: 40px;
+        }
+        .Bibleverse {
+            background-color: $sixth2-color;  
+            padding: 20px 12px;
+        }
+    }
+}
+/*frontpage ends*/
+
+/* activities */
+    .activities_container{
+        height: auto;
+        background-color: $primary-color;
+        padding:80px 10%;
+        
+        .brown_container {
+            background-color: $fourth-color;
+            height: auto;
+            box-shadow: 15px 15px 10px #0000002f;
+            margin: 0;
+
+            .div_img {
+                padding: 0 160px;
+            }
+
+            img {
+                height: 550px;
+                width: auto;
+                opacity: 0.7;
+                margin: 0;
+                padding: 0;
+                position: relative;
+                box-shadow: 10px 10px 10px #0000002f;
+            }
+
+            .line {
+
+                border-top: solid 1.5px $fifth-color;
+                width: 50%;
+            }
+
+            /* video */
+            iframe {
+                align-items: center;
+                margin-bottom: -50px;
+                width: fit-content;
+                opacity: 0.9;
+                box-shadow: 10px 10px 10px #0000002f;
+            }
+        }
+    }
+/* activities ends */
+
+/* map */
+.map {
+    padding: 0;
+    border-bottom: solid 2px $seventh-color;
+    border-top: solid 2px $seventh-color;
+
+    .map-area {
+        height: 600px;
+        width: 100%;
+    
+        iframe {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+/* map ends */
+
+/* contact */
+.contact{
+    background-color: $secondary-color;
+    padding: 0 10%;
+
+    .contact-row {
+        height: 580px;
+        display: flex;
+        align-items: center;
+
+        .col-4 {
+            height: 400px;
+            padding: 30px 70px 0 70px;
+        }
+
+        .icons {
+            justify-content: center;
+            gap: 8%;
+            margin-top: 40px;
+            
+            img{
+                height: 70px;
+                width: 70px;
+                transition-duration: 0.3s;
+            }
+
+            img:hover {
+                transform: scale(1.2);
+            }
+        }
+        .space1 {
+            height: 35px;
+        }
+        .space2 {
+            height: 20px;
+        }
+        .space3 {
+            height: 12px;
+        }
+        button {
+            background-color: $third-color;
+            color: $primary-color;
+            display: flex;
+            margin-left: auto;
+        }
+        button:hover {
+            background-color: $third-color-hover;
+            color: $primary-color;
+        }
+        .borders {
+            border-left: solid 0.5px $fifth-color;
+            border-right: solid 0.5px $fifth-color;
+        }
+    }
+}
+/* contact ends */
+
+/* footer */
+.footer{
+    background-color: $seventh-color;
+    padding: 0 10%;
+    
+    .footerrow{
+        height: 73px;
+        display: flex;
+        align-items: center;
+        
+       
+        .col {
+            display: flex;
+            gap: 4px;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            
+            p { 
+                margin: 0;
+            }
+
+            img{
+                height: 24px;
+            }
+
+            i {
+                color: $primary-color;
+                height: 24px;
+            }
+        }
+    }
+}
+/* footer ends */
+
+@media only screen and (max-width: 900px) {
+    
+
+    .frontpage .top .logo {
+        height: 0;
+    }
+    .logo {
+        width: 0;
+        height: 0;
+    }
+
+    .name {
+        margin-bottom: 350px;
+    }
+
+    .bottom{
+        margin-top: 33vh;
+        justify-content: center;
+    }
+    
+    .brown_container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .img {
+        height: 100px;
+        width: auto;
+    }
+
+    .contact {
+        .col {
+            gap: 50px;
+        }
+        
+    }
+
+}
+
