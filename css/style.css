@@ -14,14 +14,14 @@
 .nav {
   font-family: "Vollkorn", serif;
   color: #F8F8F8;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 /*welcome in the greybox*/
 .p1_front {
   font-family: "Vollkorn", serif;
   color: #F8F8F8;
-  font-size: clamp(18px, 2vw, 38px);
+  font-size: 18px;
   margin: 0;
   text-align: center;
   text-shadow: 1px 1px 8px #373737;
@@ -31,7 +31,7 @@
 .p1b_front {
   font-family: "Vollkorn", serif;
   color: #F8F8F8;
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: 18px;
   margin: 0;
   text-align: center;
   text-shadow: 1px 1px 8px #373737;
@@ -183,7 +183,7 @@
 .frontpage .bottom {
   padding: 0;
   justify-content: flex-end;
-  margin-top: 35vh;
+  margin-top: 400px;
 }
 .frontpage .bottom .greybox {
   display: flex;
